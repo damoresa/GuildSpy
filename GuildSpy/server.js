@@ -52,13 +52,12 @@ var scraper = function() {
 	});
 };
 
-//Server configuration
-var server = guildSpy.listen(8081, function() {
+// Server configuration
+//process.env.PORT lets the port be set by Heroku
+var port = server.listen(process.env.PORT || 8080);
+var server = guildSpy.listen(port, function() {
 
-	var host = server.address().address;
-	var port = server.address().port;
-
-	console.log("GuildSpy listening at http://%s:%s", host, port);
+	console.log("GuildSpy listening at http://localhost:%s", port);
 	console.log("Starting CronJob");
 	
 	var job = new CronJob({
