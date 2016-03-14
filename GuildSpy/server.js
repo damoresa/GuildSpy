@@ -62,7 +62,7 @@ var server = guildSpy.listen(8081, function() {
 	console.log("Starting CronJob");
 	
 	var job = new CronJob({
-		  cronTime: '05 * * * * *',
+		  cronTime: '*/10 * * * * *',
 		  onTick: scraper,
 		  start: false,
 		  timeZone: 'Europe/Madrid'
