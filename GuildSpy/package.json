@@ -1,0 +1,29 @@
+{
+  "name": "GuildSpy",
+  "version": "0.1.0",
+  "description": "GuildSpy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/damoresa/GuildSpy"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "socket.io",
+    "real time"
+  ],
+  "author": "Daniel Amores <damoresac@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "socket.io"	 : "1.4.5",
+    "cron"	     : "latest"
+  }
+}
