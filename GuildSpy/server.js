@@ -54,8 +54,8 @@ var scraper = function() {
 
 // Server configuration
 //process.env.PORT lets the port be set by Heroku
-var port = server.listen(process.env.PORT || 8080);
-var server = guildSpy.listen(port, function() {
+guildSpy.set('port', (process.env.PORT || 8080));
+var server = guildSpy.listen(guildSpy.get('port'), function() {
 
 	console.log("GuildSpy listening at http://localhost:%s", port);
 	console.log("Starting CronJob");
