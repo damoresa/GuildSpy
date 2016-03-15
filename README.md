@@ -8,12 +8,6 @@ I also used it in order to get in touch with NodeJS and Socket.IO.
 
 Once the site is deployed, as soon as you access the main page, you'll get notifications if the ammount of online players of any of the tracked guilds increases.
 
-## Developing
-
-Daniel Amores.
-
-Contact: damoresac@gmail.com
-
 ### Tools
 
 Created with:
